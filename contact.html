@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Brainwave Matrix Tech</title>
+<style>
+:root { --primary:#00a4ef; --dark:#1f1f1f; --grey:#5f6368; --light:#ffffff; --accent:#f0f7ff; }
+body { font-family:'Roboto','Segoe UI',sans-serif; margin:0; background:var(--light); color:var(--dark); line-height:1.6; }
+
+header { background: var(--light); padding: 20px 8%; display:flex; align-items:center; border-bottom:1px solid #eee; }
+.logo-img { height:50px; margin-right:15px; border-radius:12px; }
+.brand-name { font-size:1.5rem; font-weight:600; letter-spacing:-0.5px; }
+nav { margin-left:auto; }
+nav a { margin-left:15px; text-decoration:none; color:var(--dark); font-weight:500; transition:color 0.3s; }
+nav a:hover { color: var(--primary); }
+
+.main-content { max-width:800px; margin:60px auto; padding:0 20px; }
+h1 { font-size:3rem; text-align:center; margin-bottom:20px; }
+p { text-align:center; color:var(--grey); margin-bottom:40px; }
+
+.contact-box {
+    margin-top: 60px; 
+    padding: 40px; 
+    border-radius: 24px; 
+    background: linear-gradient(145deg, #ffffff, #f0f4f8); 
+    border: 1px solid #d1d9e6; 
+    text-align: center; /* Important: center content */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-box h2 { color:var(--primary); font-size:2rem; margin-top:0; margin-bottom:20px; }
+.contact-box a { display:inline-flex; align-items:center; justify-content:center; background:white; padding:12px 28px; border-radius:50px; text-decoration:none; color:var(--primary); font-weight:600; box-shadow:0 4px 15px rgba(0,0,0,0.05); border:1px solid #eee; transition:background 0.3s; }
+.contact-box a:hover { background:#e6f2ff; }
+
+footer { margin-top:80px; padding:40px; font-size:0.85rem; color:#999; border-top:1px solid #eee; text-align:center; }
+footer a { color:#999; text-decoration:none; margin:0 10px; }
+
+/* Desktop menu */
+.nav-desktop { display: flex; }
+.nav-desktop a { margin-left: 15px; text-decoration:none; color:var(--dark); font-weight:500; }
+.nav-desktop a:hover { color: var(--primary); }
+
+/* Mobile menu */
+.nav-mobile { display: none; position: relative; }
+.hamburger { font-size: 1.8rem; cursor: pointer; user-select: none; }
+.mobile-links { display: none; flex-direction: column; background: var(--light); position: absolute; top: 35px; right: 0; width: 200px; border: 1px solid #eee; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+.mobile-links a { padding: 10px 15px; border-bottom: 1px solid #eee; text-decoration:none; color:var(--dark); font-weight:500; }
+.mobile-links a:hover { background: var(--accent); color: var(--primary); }
+
+/* Last item no border */
+.mobile-links a:last-child { border-bottom: none; }
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .nav-desktop { display: none; }
+    .nav-mobile { display: block; }
+}
+
+@media (max-width: 480px) {
+    .contact-box { padding: 30px 15px; }
+    .contact-email { padding: 10px 20px; font-size: 0.95rem; }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<img src="BMT_logo.ico" alt="Brainwave Matrix Tech Logo" class="logo-img">
+<span class="brand-name">Brainwave Matrix Tech</span>
+<nav>
+		<div class="nav-desktop">
+			<a href="index.html">Home</a>
+			<a href="arithmetic.html">Arithmetic</a>
+			<a href="arithmeticpuzzle.html">Arithmetic Puzzle</a>
+			<a href="numberninjas.html">Number Ninjas</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		
+		<!-- Mobile hamburger -->
+		<div class="nav-mobile">
+			<span class="hamburger" onclick="toggleMenu()">☰</span>
+			<div class="mobile-links" id="mobileMenu">
+			<a href="index.html">Home</a>
+			<a href="arithmetic.html">Arithmetic</a>
+			<a href="arithmeticpuzzle.html">Arithmetic Puzzle</a>
+			<a href="numberninjas.html">Number Ninjas</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="main-content">
+<h1>Contact Us</h1>
+<p>We would love to hear from you! Reach out for support, feedback, or collaboration.</p>
+
+<div class="contact-box">
+<h2>Email Us Directly</h2>
+<a href="mailto:brainwavematrixtech@gmail.com">✉️ brainwavematrixtech@gmail.com</a>
+</div>
+
+<div class="contact-box">
+<h2>Follow Us</h2>
+<p>Stay updated with our latest apps and news.</p>
+<a href="https://play.google.com/store/apps/developer?id=Brainwave+Matrix+Tech" target="_blank">📱 Google Play Developer Page</a>
+</div>
+
+<footer>
+<p>&copy; 2026 Brainwave Matrix Tech. All rights reserved.</p>
+</footer>
+</div>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
+
+</body>
+</html>

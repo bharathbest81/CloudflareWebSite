@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Brainwave Matrix Tech</title>
+<style>
+:root { --primary:#00a4ef; --dark:#1f1f1f; --grey:#5f6368; --light:#ffffff; --accent:#f0f7ff; }
+body { font-family:'Roboto','Segoe UI',sans-serif; margin:0; background:var(--light); color:var(--dark); line-height:1.6; }
+
+header { background: var(--light); padding: 20px 8%; display:flex; align-items:center; border-bottom:1px solid #eee; }
+.logo-img { height:50px; margin-right:15px; border-radius:12px; }
+.brand-name { font-size:1.5rem; font-weight:600; letter-spacing:-0.5px; }
+nav { margin-left:auto; }
+nav a { margin-left:15px; text-decoration:none; color:var(--dark); font-weight:500; transition:color 0.3s; }
+nav a:hover { color: var(--primary); }
+
+.main-content { max-width:900px; margin:60px auto; padding:0 20px; }
+.hero { text-align:center; margin-bottom:60px; }
+.hero h1 { font-size:3rem; margin-bottom:15px; }
+.hero p { font-size:1.25rem; color:var(--grey); }
+
+.section { background: var(--accent); padding:40px 30px; border-radius:20px; margin-bottom:40px; box-shadow:0 6px 18px rgba(0,0,0,0.05); }
+.section h2 { color:var(--primary); margin-top:0; font-size:2rem; }
+.section p { color:var(--dark); font-size:1.1rem; line-height:1.8; }
+
+footer { margin-top:80px; padding:40px; font-size:0.85rem; color:#999; border-top:1px solid #eee; text-align:center; }
+footer a { color:#999; text-decoration:none; margin:0 10px; }
+
+/* Floating Contact Button */
+.floating-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    color: white;
+    padding: 15px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background 0.3s;
+    z-index: 9999;
+}
+.floating-contact:hover {
+    background: #007ac1; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Desktop menu */
+.nav-desktop { display: flex; }
+.nav-desktop a { margin-left: 15px; text-decoration:none; color:var(--dark); font-weight:500; }
+.nav-desktop a:hover { color: var(--primary); }
+
+/* Mobile menu */
+.nav-mobile { display: none; position: relative; }
+.hamburger { font-size: 1.8rem; cursor: pointer; user-select: none; }
+.mobile-links { display: none; flex-direction: column; background: var(--light); position: absolute; top: 35px; right: 0; width: 200px; border: 1px solid #eee; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+.mobile-links a { padding: 10px 15px; border-bottom: 1px solid #eee; text-decoration:none; color:var(--dark); font-weight:500; }
+.mobile-links a:hover { background: var(--accent); color: var(--primary); }
+
+/* Last item no border */
+.mobile-links a:last-child { border-bottom: none; }
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .nav-desktop { display: none; }
+    .nav-mobile { display: block; }
+}
+
+@media (max-width: 480px) {
+    .contact-box { padding: 30px 15px; }
+    .contact-email { padding: 10px 20px; font-size: 0.95rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<img src="BMT_logo.ico" alt="Brainwave Matrix Tech Logo" class="logo-img">
+<span class="brand-name">Brainwave Matrix Tech</span>
+<nav>
+		<div class="nav-desktop">
+			<a href="index.html">Home</a>
+			<a href="arithmetic.html">Arithmetic</a>
+			<a href="arithmeticpuzzle.html">Arithmetic Puzzle</a>
+			<a href="numberninjas.html">Number Ninjas</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		
+		<!-- Mobile hamburger -->
+		<div class="nav-mobile">
+			<span class="hamburger" onclick="toggleMenu()">☰</span>
+			<div class="mobile-links" id="mobileMenu">
+			<a href="index.html">Home</a>
+			<a href="arithmetic.html">Arithmetic</a>
+			<a href="arithmeticpuzzle.html">Arithmetic Puzzle</a>
+			<a href="numberninjas.html">Number Ninjas</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="main-content">
+<section class="hero">
+<h1>About Brainwave Matrix Tech</h1>
+<p>Creating engaging and educational apps for children, with a focus on making learning fun and interactive.</p>
+</section>
+
+<div class="section">
+<h2>Our Story</h2>
+<p>Brainwave Matrix Tech was founded with the goal of providing kids with high-quality educational apps that help develop essential skills such as mathematics, logical thinking, and problem-solving. Starting with a few apps for our own children, we quickly realized the potential to reach young learners worldwide through innovative digital tools.</p>
+</div>
+
+<div class="section">
+<h2>Our Mission</h2>
+<p>We strive to make learning an enjoyable experience for children everywhere. Our mission is to combine education with interactive gameplay, creating apps that are not only fun but also effective in improving core skills.</p>
+</div>
+
+<div class="section">
+<h2>Our Vision</h2>
+<p>To be a leading provider of educational technology solutions that inspire curiosity, creativity, and a love for learning. Beyond educational apps, we plan to expand into web development and custom app solutions for other educational needs as requested by our community.</p>
+</div>
+
+<div class="section">
+<h2>Future Plans</h2>
+<p>We plan to continuously release new educational apps, expand into other areas of skill development, and explore collaborative projects in web and app development for clients seeking tailored solutions.</p>
+</div>
+
+<footer>
+<p>&copy; 2026 Brainwave Matrix Tech. All rights reserved.</p>
+<p><a href="https://play.google.com/store/apps/developer?id=Brainwave+Matrix+Tech">View all apps on Google Play</a></p>
+</footer>
+
+</div>
+<a href="contact.html" class="floating-contact">Contact Us</a>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
+
+</body>
+</html>
