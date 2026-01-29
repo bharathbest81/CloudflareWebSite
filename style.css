@@ -395,3 +395,45 @@ footer a { color: #999; text-decoration: none; margin: 0 10px; }
 .contact-box h2 { color:var(--primary); font-size:2rem; margin-top:0; margin-bottom:20px; }
 .contact-box a { display:inline-flex; align-items:center; justify-content:center; background:white; padding:12px 28px; border-radius:50px; text-decoration:none; color:var(--primary); font-weight:600; box-shadow:0 4px 15px rgba(0,0,0,0.05); border:1px solid #eee; transition:background 0.3s; }
 .contact-box a:hover { background:#e6f2ff; }
+
+
+/* ===== Plain text lists (no bullets, no icons, no markers) ===== */
+
+.hero ul {
+	text-align: left; 
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+
+.hero ul li {
+    margin-bottom: 14px;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Remove any pseudo markers if present */
+.hero ul li::before {
+    content: none !important;
+}
+
+.app-cards card ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.app-cards card ul li {
+    margin-bottom: 14px;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.app-cards card ul li::before {
+    content: none !important;
+}
